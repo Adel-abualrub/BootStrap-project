@@ -8,12 +8,12 @@
 
     font-family: var(--main-font);
 }
+
+/* startnavpar*/
 body{
     background-color: #0F0F0F;
-    height: 50000px;
+    
 }
-/* startnavpar*/
-
 .navbar .navbar-expand-lg .navbar-light  .bg-color{
     background-color: #f8f9fa00;
     
@@ -56,6 +56,66 @@ transition: 0.5s;
 }
 /*end nav*/
 /*start hero*/
+
+.poster img{
+    display: none;
+}
+
+@media (min-width: 1021px) {
+  .poster .desctop-img { 
+    display: block; 
+  }
+}
+@media (min-width:370px) and (max-width:1020px) 
+{
+ .poster .laptop-img{
+    display:block;
+ }
+
+}
+@media (max-width: 370px) {
+     .poster .mobile-img { display: block; } 
+    }
+    .poster img {
+  max-width: 100%;
+  
+  
+}
+
+
+.hero {
+    overflow-x: hidden;
+    padding-bottom: 30px;
+}
+.description{
+    max-width: 700px;
+    margin: auto;
+    color: #999999;
+}
+    
+.text-box {
+  top: 88%;   /* يرفع النص لفوق (غيّر النسبة حسب ما تحب) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+      align-items: anchor-center;
+}
+.hero button{
+    transition: 0.5s;
+}
+.hero button:hover{
+transform: scale(1.3);
+}
+
+
+
+
+
+
+
 
 
 

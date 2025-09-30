@@ -10,7 +10,7 @@
 }
 body{
     background-color: #0F0F0F;
-    height: 100000px;
+    height: 50000px;
 }
 /* startnavpar*/
 
@@ -51,5 +51,12 @@ transition: 0.5s;
 .btn:hover img{
     transform: scale(1.6);
 }
-
+.navbar-toggler .collapsed{
+    background-color: aquamarine;
+}
 /*end nav*/
+/*start hero*/
+
+
+
+/*end hero*/

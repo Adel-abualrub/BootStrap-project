@@ -10,7 +10,8 @@
 
 /* startnavpar*/
 body{
-    background-color: #000000;
+  
+    background-color: #f7f3f3;
     height: 100000px;
 }
 .navbar .navbar-expand-lg .navbar-light  .bg-color{
@@ -26,7 +27,7 @@ body{
 }
 
 nav.navbar{
-  width: 100vw; /* (كما هو بدون تعديل) */
+  width: 100vw;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -57,28 +58,25 @@ nav.navbar{
 }
 /*end nav*/
 
-/* ================== HERO (خلفية متجاوبة بدل .poster) ================== */
-
-/* موبايل افتراضيًا */
 .poster img{
   display: none;
 }
 .hero{
-  padding-bottom: 30px;
+  
    min-height: 100vh;
   
   background: url("./../img/laptop.webp") no-repeat center/cover;
   
 }
 
-/* لابتوب/تابلت: 461px – 1020px */
+
 @media (min-width: 461px) and (max-width: 1020px){
   .hero{
     background: url("./../img/laptop.webp") no-repeat center/cover;
   }
 }
 
-/* ديسكتوب: ≥ 1021px */
+
 @media (min-width: 1021px){
   .hero{
    
@@ -86,7 +84,7 @@ nav.navbar{
   }
 }
 
-/* نصوص الوصف — المنطقي أنك تستخدم إظهار/إخفاء حسب القياس كما هو عندك */
+
 .description {
   display: none;
   max-width: 700px;
@@ -94,7 +92,7 @@ nav.navbar{
   color: #999999;
 }
 
-/* Desktop ≥ 1021px */
+
 @media (min-width: 1021px) {
   .description-of-disctop{
     display: block;
@@ -102,7 +100,7 @@ nav.navbar{
  
 }
 
-/* Desktop عريض جدًا (كما في كودك) */
+
 
 
 /* Laptop/Tablet: 461px–1020px */
@@ -130,7 +128,7 @@ nav.navbar{
   max-width: 700px;
   text-align: center;
   color: #fff;
-  align-items: anchor-center; /* تُركت كما هي */
+  align-items: anchor-center; 
 }
 
 .hero button{
@@ -140,3 +138,63 @@ nav.navbar{
   transform: scale(1.3);
 }
 /*end hero*/
+/*start categores*/
+.pagination {
+  background-color: #0F0F0F;
+  padding: 10px 10px;          /* بدل 16px → أصغر */
+  border-radius: 8px;
+  display: inline-flex;       /* يخلي العرض قد المحتوى */
+  gap: 6px;                   /* مسافة صغيرة بين العناصر */
+}
+
+.pagination .page-link {
+  width: 17px;               
+  height: 28px;
+  padding: 0;
+  font-size: 12px;            
+ display: flex;
+ align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #777;
+}
+
+
+.cards .aria-label{
+  display: none !important;
+}
+@media screen and (min-width : 770px) {
+  .cards .aria-label{
+    display: flex !important;
+  }
+}
+.pagination .page-item.active .page-link i {
+  color: red;  
+  background-color: #0F0F0F;
+  
+}
+.page-item.active .page-link{
+  background-color: black;
+  transform: scale(1.6);
+}
+.pagination .page-link i {
+  font-size: 10px;            
+  color: #444;
+}
+
+.cards .aria-label {
+  top: -60px;   
+  right: 0px;
+  width: 257px;
+}
+.pagination .arrow {
+  background-color: #1A1A1A;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;            
+}
+.pagination .page-link .fa-arrow-left ,.pagination .page-link .fa-arrow-right {
+  font-size: 10px;            
+  color: #ffffff;
+}

@@ -218,7 +218,7 @@ nav.navbar{
   background-color:var(--back-ground) ;
   transition: .5s;
 }
-.card:hover{
+.cards-2 .card:hover{
   transform: scale(1.2);
   z-index: 1;
 }
@@ -256,7 +256,7 @@ nav.navbar{
   }
 }
 /* لابتوب: 4 */
-@media (min-width: 1200.1px) and (max-width: 1699.9px) {
+@media (min-width: 1200.1px) and (max-width: 1799.9px) {
   .cards-2 .card-1,
   .cards-2 .card-2,
   .cards-2 .card-3,
@@ -266,7 +266,7 @@ nav.navbar{
 }
 
 /* ديسكتوب: 5 */
-@media (min-width: 1700px) {
+@media (min-width: 1800px) {
   .cards-2 .card-1,
   .cards-2 .card-2,
   .cards-2 .card-3,
@@ -275,3 +275,47 @@ nav.navbar{
     display: block;
   }
 }
+
+/*start devices section*/
+.devices .card {
+  background: linear-gradient(
+    -135deg,            
+    rgba(229, 0, 0, 0.6) 0%,   
+    rgba(229, 0, 0, 0) 20%,    
+    #0F0F0F 100%             
+  );
+  transition: all (.5s);
+  
+}
+
+.devices .card-title{
+  color: white;
+}
+  
+
+.card-back{
+  padding: 16px;
+  background-color: var(--Text-Hover-color);
+  border-radius: 7px;
+  background-color: var(--back-ground);
+  
+}
+.devices .card:hover {
+
+transform: scale(1.2);
+z-index: 4;
+}
+.devices h2{
+  color: var(--Text-Hover-color);
+}
+.devices p{
+  color: var(--Text-Color);
+}
+/*end Devices Section*/
+
+
+/* Container */
+
+/* Auto layout */
+
+

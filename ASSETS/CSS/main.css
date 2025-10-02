@@ -3,6 +3,7 @@
     --Text-Hover-color :#ffff;
     --Text-Color:#BFBFBF;
     --main-font: "Inter", sans-serif;
+    --back-ground:#1A1A1A;
 }
 *{
     font-family: var(--main-font);
@@ -11,7 +12,7 @@
 /* startnavpar*/
 body{
   
-    background-color: #f7f3f3;
+    background-color: #000000;
     height: 100000px;
 }
 .navbar .navbar-expand-lg .navbar-light  .bg-color{
@@ -139,6 +140,10 @@ nav.navbar{
 }
 /*end hero*/
 /*start categores*/
+.descriotion-categores{
+  color: var(--Text-Color);
+}
+
 .pagination {
   background-color: #0F0F0F;
   padding: 10px 10px;          /* بدل 16px → أصغر */
@@ -197,4 +202,76 @@ nav.navbar{
 .pagination .page-link .fa-arrow-left ,.pagination .page-link .fa-arrow-right {
   font-size: 10px;            
   color: #ffffff;
+}
+.cards-2{
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+
+}
+.card{
+  display: block;
+  flex-grow: 1;
+  flex-basis: 230px;
+  background-color:var(--back-ground) ;
+  transition: .5s;
+}
+.card:hover{
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+
+.cards-2 .card {
+  display: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.cards-2 .btn{
+  font-size: 1.2rem;
+}
+/* موبايل: 2 */
+@media (max-width: 767.9px) {
+  .cards-2 .card-1
+  {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cards-2 .card-1,
+  .cards-2 .card-2 {
+    display: block;
+  }
+}
+@media (min-width: 991.1px) and (max-width: 1200px) {
+  .cards-2 .card-1,
+  .cards-2 .card-2,
+  .cards-2 .card-3 {
+    display: block;
+  }
+}
+/* لابتوب: 4 */
+@media (min-width: 1200.1px) and (max-width: 1699.9px) {
+  .cards-2 .card-1,
+  .cards-2 .card-2,
+  .cards-2 .card-3,
+  .cards-2 .card-4 {
+    display: block;
+  }
+}
+
+/* ديسكتوب: 5 */
+@media (min-width: 1700px) {
+  .cards-2 .card-1,
+  .cards-2 .card-2,
+  .cards-2 .card-3,
+  .cards-2 .card-4,
+  .cards-2 .card-5 {
+    display: block;
+  }
 }

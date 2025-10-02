@@ -12,7 +12,7 @@
 /* startnavpar*/
 body{
   
-    background-color: #000000;
+    background-color: #ffffff;
     height: 100000px;
 }
 .navbar .navbar-expand-lg .navbar-light  .bg-color{
@@ -313,9 +313,61 @@ z-index: 4;
 }
 /*end Devices Section*/
 
+/*stat faq*/
+.faq-p-btn{
+  height: fit-content;
+}
+.faq .btn {
+  width: 176px;        
+  height: 68px;       
+     
+  display: flex;      
+  align-items: center;
+  justify-content: center;
 
-/* Container */
+  
+}
+@media (max-width: 767.98px) {
+  .faq .d-flex {
+    flex-direction: column;  
+    align-items: flex-start;  
+width: 176px;        
+    
+  z-index: 4;
+  }
 
-/* Auto layout */
+
+}
+
+
+.accordion-button{
+  background-color: var(--back-ground);
+  color: var(--Text-Hover-color);
+}
+.accordion-body{
+  background-color: var(--back-ground);
+  color: var(--Text-Color);
+}
+
+
+
+.accordion-button:not(.collapsed){
+  background-color: var(--back-ground);
+  color: var(--Text-Hover-color);
+}
+
+/* لما يكون مسكر = collapsed → زائد */
+.accordion-button.collapsed::after {
+  background-image: url(./../img/+icon.svg);
+}
+
+/* لما يكون مفتوح → ناقص */
+.accordion-button:not(.collapsed)::after {
+  background-image: url(./../img/-icon.svg);
+}
+
+
+/*end faq*/
+
 
 

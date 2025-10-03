@@ -146,10 +146,10 @@ nav.navbar{
 
 .pagination {
   background-color: #0F0F0F;
-  padding: 10px 10px;          /* بدل 16px → أصغر */
+  padding: 10px 10px;          
   border-radius: 8px;
-  display: inline-flex;       /* يخلي العرض قد المحتوى */
-  gap: 6px;                   /* مسافة صغيرة بين العناصر */
+  display: inline-flex;      
+  gap: 6px;                  
 }
 
 .pagination .page-link {
@@ -324,7 +324,7 @@ z-index: 4;
   display: flex;      
   align-items: center;
   justify-content: center;
-
+transition: all 0.5s;
   
 }
 @media (max-width: 767.98px) {
@@ -409,6 +409,109 @@ border-radius: 10px;
   color: var(--Text-Color);
 }
 /*end faq*/
+/*start plans*/
+.plans .plans-description{
+  color: var(--Text-Color);
+}
+.plans .hidder-plans{
+color: var(--Text-Hover-color);
+
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.plans .btn-group .btn{
+  background-color: #0F0F0F;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+.btn-group{
+  max-width: 24px;
+  max-height: 61px;
+}
+.plans .btn-1{
+  padding: 18px;
+  border-radius: 8px 0px 0px 8px;
+  border-color: #9ea5af;
+}
+.plans .btn-2{
+  padding: 18px;
+  border-radius: 0px 8px 8px 0px;
+  border-color: #9ea5af ;
+}
+
+
+.plans .card-text{
+  color: var(--Text-Color);
+}
+.plans .prices{
+  color: var(--Text-Hover-color);
+  font-size: 30px;
+}
+
+.plans .card span{
+  top: 12px;
+  left: 80px;
+}
+
+.plans .card{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+padding: 50px;
+border-radius: 8px;
+transition: all .5s;
+}
+
+
+.plans .card-body{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.plans .card:hover{
+  transform: scale(1.2);
+  z-index: 4;
+}
+
+
+
+
+
+
+
+
+.plan-card .card-text { color: #b9b9b9; }
+
+
+
+
+.card .btn-plan{
+  background-color: #E50000;
+}
+.card .btn-dark{
+  background-color: #141414;
+}
+
+
+
+
+/*end plans*/

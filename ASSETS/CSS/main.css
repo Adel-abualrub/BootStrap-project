@@ -445,7 +445,7 @@ color: var(--Text-Hover-color);
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 .btn-group{
-  max-width: 24px;
+  max-width: 120px;
   max-height: 61px;
 }
 .plans .btn-1{

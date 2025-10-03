@@ -515,3 +515,59 @@ gap: 20px;
 
 
 /*end plans*/
+
+/*start cta*/
+
+
+@media screen  and (min-width:1700px){
+  
+}
+.cta-back{
+  border-radius: 10px;
+  border: 2px solid rgb(102, 98, 98);
+  height: 344;
+background-image: url(./../img/CTA-DESCTOP.webp);
+width: 1646;
+
+height: 344px;
+}
+.cta-content h2{
+  color: var(--Text-Hover-color);
+  
+}
+.cta-content p{
+  color: var(--Text-Color);
+}
+.cta .btn{
+  padding: 18px;
+  border: 8px;
+background-color: #E50000;
+color: var(--Text-Hover-color);
+align-items: self-start;
+}
+
+@media screen and ( max-width:992px) {
+  .cta-back{
+  
+  height: 342px;
+background-image: url(./../img/CTA-MOBILE.webp);
+width: 536px;
+
+height: 344px;
+
+}
+.cta-content{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.cta .container .cta-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;/*استخدمت imprtant عشان بال html معطي خاصية من البوتستراب spcebetween */
+  justify-content: center !important;
+gap: 10px;
+}
+}
+
+/*end cta*/

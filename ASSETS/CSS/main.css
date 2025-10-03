@@ -25,10 +25,12 @@ body{
     border-radius: 7px;
     outline: 4px solid #555;
     margin-left: auto;
+    
 }
 
 nav.navbar{
   width: 100vw;
+  z-index: 5;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -571,3 +573,38 @@ gap: 10px;
 }
 
 /*end cta*/
+/*start footer*/
+
+footer{
+  color: whitesmoke;
+}
+footer a{
+text-decoration: none;
+color: var(--Text-Color);
+
+}
+footer li {
+  list-style: none;
+}
+
+.Contact-footer a{
+background-color: var(--back-ground);
+padding: 16px;
+border-radius: 8px;
+border: 1px solid var(--Text-Color);
+}
+footer a {
+
+  transition: all .5s;
+}
+footer a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+.copyright{
+padding: 60px 0px;
+border-top: 3px var(--Text-Color) solid ;
+}
+
+
+/*end footer*/

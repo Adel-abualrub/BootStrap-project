@@ -12,7 +12,7 @@
 /* startnavpar*/
 body{
   
-    background-color: #ffffff;
+    background-color: #000000;
     height: 100000px;
 }
 .navbar .navbar-expand-lg .navbar-light  .bg-color{
@@ -383,14 +383,31 @@ border-radius: 10px;
   background-position: bottom center;
   background-size: 100% 3px;
 }
+.acc-8,.acc-4{
+  border: none;
+  border-bottom: none;
+  background-image:none;
+  background-repeat: no-repeat;
+  background-position: none;
+  background-size: none;
+}
 
-@media (min-width: 739px) {
-.accordion-item .acc-8 {
-  display: none;
+@media screen and (max-width: 739px) {
+ .acc-8 {
+  display: none  ;
+}
+ .acc-7 {
+  display: none  ;
 }
 }
 
+.faq-hidder{
+  color: var(--Text-Hover-color);
+}
 
+.faq-descreption{
+  color: var(--Text-Color);
+}
 /*end faq*/
 
 

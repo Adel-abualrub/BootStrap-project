@@ -16,6 +16,14 @@ align-items: center;
 .py-20{
     padding: 20rem 0rem;
 }
+.py-15{
+padding: 15rem 0rem;
+
+}
+.py-10{
+padding: 10rem 0rem;
+
+}
 .width-100{
     width: 100%;
 }

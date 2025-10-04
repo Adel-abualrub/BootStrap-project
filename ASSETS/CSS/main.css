@@ -229,20 +229,33 @@ transition: all 0.5s;
 }
 
 
-
-
-/* موبايل: 2 */
 @media (max-width: 767.9px) {
   
  .categores .card{
-    width: 320.4px;
+    width: 200.4px;
    min-height: fit-content;
     flex-grow: 1;
   }
   .categores .card-2 , .categores .card-3, .categores .card-4,.categores .card-5{
     display: none;
   } 
-  .navigation{
+  .categores .navigation{
+    display: none;
+  }
+}
+
+/* موبايل: 2 */
+@media (max-width: 767.9px) {
+  
+ .categores .card{
+    width: 300.4px;
+   min-height: fit-content;
+    flex-grow: 1;
+  }
+    .categores .card-3, .categores .card-4,.categores .card-5{
+    display: none;
+  } 
+  .categores .navigation{
     display: none;
   }
 }
@@ -256,7 +269,7 @@ transition: all 0.5s;
   .categores .card-2 , .categores .card-3, .categores .card-4,.categores .card-5{
     display: none;
   } 
-  .navigation{
+  .catefores .navigation{
     display: none;
   }
 
@@ -270,7 +283,7 @@ transition: all 0.5s;
   .categores .card-3, .categores .card-4 , .categores .card-5{
     display: none;
   } 
-  .navigation{
+  .categores .navigation{
     display: none;
   }
   
@@ -285,7 +298,7 @@ transition: all 0.5s;
   .categores .card-5 , .categores .card-4{
     display: none;
   }
-  .mobile-slider{
+  .categores .mobile-slider{
   display: none;
 }
 }
@@ -298,7 +311,7 @@ transition: all 0.5s;
    min-height: fit-content;
    
   }
-.mobile-slider{
+.categores .mobile-slider{
   display: none;
 }
 }
@@ -310,7 +323,7 @@ transition: all 0.5s;
   border: none;
 }
 
-.mobile-slider .page-link{
+.categores .mobile-slider .page-link{
   background-color: transparent;
   border: none;
 
@@ -513,7 +526,7 @@ color: var(--Text-Hover-color);
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 .btn-group{
-  max-width: 120px;
+  max-width: 190px;
   max-height: 61px;
 }
 .plans .btn-1{
@@ -542,6 +555,7 @@ color: var(--Text-Hover-color);
 }
 
 .plans .card{
+  background-color: var(--back-ground);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 padding: 50px;
 border-radius: 8px;
@@ -587,56 +601,103 @@ gap: 20px;
 /*start cta*/
 
 
-@media screen  and (min-width:1700px){
-  
-}
 .cta-back{
-  border-radius: 10px;
-  border: 1px var(--border-color) solid;
-  height: 344;
-background-image: url(./../img/CTA-DESCTOP.webp);
-width: 1646;
-
-height: 344px;
-}
-.cta-content h2{
-  color: var(--Text-Hover-color);
-  
-}
-.cta-content p{
-  color: var(--Text-Color);
-}
-.cta .btn{
-  padding: 18px;
-  border: 8px;
-background-color: #E50000;
-color: var(--Text-Hover-color);
-align-items: self-start;
-}
-
-@media screen and ( max-width:992px) {
-  .cta-back{
-  
-  height: 342px;
-background-image: url(./../img/CTA-MOBILE.webp);
-width: 536px;
-
-height: 344px;
-
-}
-.cta-content{
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
  
+ 
+  background-image:
+    linear-gradient(90deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,0) 70%),
+    url("./../img/CTA-DESCTOP.webp");            
+  background-repeat: no-repeat;
+  background-size: cover;                          
+  background-position: center right;               
+  padding: 28px 32px;                              
 }
-.cta .container .cta-mobile{
+
+
+.cta .cta-mobile{
   display: flex;
-  flex-direction: column;
-  align-items: center !important;/*استخدمت imprtant عشان بال html معطي خاصية من البوتستراب spcebetween */
-  justify-content: center !important;
-gap: 10px;
+  align-items: center;       
+  justify-content: space-between;
+  gap: 16px;
 }
+
+.cta-content h2{ color: var(--Text-Hover-color); margin: 0 0 8px; }
+.cta-content p{ color: var(--Text-Color); max-width: 56ch; margin: 0; opacity: .9; }
+
+/* زر أحمر أنيق */
+.cta .btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  height: 48px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 12px;
+  background-color: #E50000;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(229,0,0,.35);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.cta .btn:hover{ transform: translateY(-1px); box-shadow: 0 14px 36px rgba(229,0,0,.45); }
+
+
+@media (min-width: 1700px){
+  .cta-back{
+    min-height: 344px;
+    background-image:
+      radial-gradient( at 80% 40%, rgba(229,0,0,.22), rgba(229,0,0,0) 40%),
+      linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,0) 70%),
+      url("./../img/CTA-DESCTOP.webp");
+    background-size: cover;
+    background-position: center right;
+  }
+  .cta-content h2{ font-size: 40px; line-height: 1.1; }
+  .cta-content p{ font-size: 16px; }
+}
+
+
+@media (min-width: 992px) and (max-width: 1699.98px){
+  .cta-back{
+    min-height: 202px;                  
+    background-position: center right 20%;
+  }
+  .cta-content h2{ font-size: 32px; line-height: 1.15; }
+  .cta-content p{ font-size: 15px; }
+  .cta .btn{ height: 44px; min-width: 180px; }
+}
+
+
+@media (max-width: 574px){
+  .cta-back{
+    min-height: 344px;  
+    width: 358px;                 
+    background-image:
+      radial-gradient( at 50% 20%, rgba(229,0,0,.18), rgba(229,0,0,0) 45%),
+      linear-gradient(180deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,0) 100%),
+      url("./../img/CTA-MOBILE.webp");  
+    background-position: center center;
+    padding: 20px;
+  }
+
+  
+  .cta .cta-mobile{
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .cta-content h2{ font-size: 26px; }
+  .cta-content p{ font-size: 14px; max-width: 36ch; }
+  .cta .btn{ height: 44px; min-width: 200px; }
+}
+
+
 
 /*end cta*/
 /*start footer*/
@@ -672,5 +733,16 @@ padding: 60px 0px;
 border-top: 3px var(--Text-Color) solid ;
 }
 
+
+@media screen and (max-width:818px) {
+  .Contact-footer .icons{
+   flex-direction: column;
+    gap: 10px;
+  }
+  .copy-mobile{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 /*end footer*/

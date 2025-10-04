@@ -395,9 +395,7 @@ nav.navbar{
     margin-bottom: 40px;
   }
   
-  .categores .hidder-categores {
-    font-size: 28px;
-  }
+ 
   
   .categores .description-categores {
     font-size: 14px;
@@ -479,6 +477,9 @@ nav.navbar{
     font-size: 18px;
   }
   
+  .categores-top {
+        margin: 0px 20px;
+  }
   .categores-top .d-flex {
     flex-direction: column;
     gap: 20px;
@@ -730,7 +731,10 @@ gap: 20px;
 
 
 
-
+.card-body .monthly{
+color: var(--border-color);
+font-size: 18px;
+}
 
 
 .plan-card .card-text { color: #b9b9b9; }

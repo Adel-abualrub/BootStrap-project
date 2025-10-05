@@ -10,7 +10,9 @@
 .gap-14px{
     gap: 14px;
 }
-gap
+.gap-50px{
+    gap: 50px;
+}
 .z-index{
     z-index: 2;
 }

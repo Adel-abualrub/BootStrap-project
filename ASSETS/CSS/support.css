@@ -1,0 +1,140 @@
+:root{
+    --main-color: #0F0F0F;
+    --Text-Hover-color :#ffff;
+    --Text-Color:#BFBFBF;
+    --main-font: "Inter", sans-serif;
+    --back-ground:#1A1A1A;
+    --border-color:#4D4D4D;
+}
+
+
+
+
+
+
+
+.support-section{
+    padding: 200px 0px;
+}
+
+
+.support-img img {
+    display: none;
+}
+
+.support-hidder{
+    color: var(--Text-Hover-color);
+}
+.support-description{
+color: var(--Text-Color);
+
+
+}
+.check-box-div{
+    width: fit-content;
+}
+label{
+    color: var(--Text-Hover-color);
+}
+
+.contry{
+    width: fit-content;
+}
+
+textarea {
+  resize: none;
+}
+
+
+.support-section input ,.support-section select ,.support-section textarea{
+
+background-color: var(--back-ground);
+border-radius: 8px;
+border: 1px solid var(--border-color);
+padding: 20px;
+}
+
+.support-section .right-section{
+
+padding: 20px;
+border: 1px solid var(--border-color);
+border-radius: 8px;
+}
+
+ .support-img{
+    width: fit-content;
+    margin: auto;
+ }
+
+.form-check-label{
+    font-size: small;
+    color: var(--Text-Color);
+}
+@media (max-width: 767.98px) {
+.support-img .support-bage-mobile-img {
+display: block;
+
+
+}
+
+.Message{
+    height: 109px;
+}
+.checkbox{
+    width: 24px;
+    height: 24px;
+}
+.Send{
+    width: 100%;
+}
+
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1439.98px) {
+
+.support-img .support-bage-laptop-img {
+display: block;
+
+
+}
+.Message{
+    height: 129px;
+}
+.checkbox{
+    width: 24px;
+    height: 24px;
+}
+
+
+}
+
+
+
+@media (min-width: 1440px) {
+.support-img .support-bage-desctop-img{
+
+    display: block;
+}
+.Message{
+    height: 163px;
+}
+ 
+.checkbox{
+    width: 28px;
+    height: 28px;
+}
+
+}
+
+.Send{
+background-color: #E50000;
+color: white;
+
+}
+
+
+

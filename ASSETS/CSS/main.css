@@ -979,3 +979,8 @@ border-top: 3px var(--Text-Color) solid ;
 }
 
 /*end footer*/
+
+/*modal*/
+.modal-body a{
+text-decoration: none;
+}

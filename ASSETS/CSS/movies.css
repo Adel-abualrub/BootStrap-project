@@ -1,0 +1,173 @@
+:root{
+    --main-color: #0F0F0F;
+    --Text-Hover-color :#ffff;
+    --Text-Color:#BFBFBF;
+    --main-font: "Inter", sans-serif;
+    --back-ground:#1A1A1A;
+    --border-color:#4D4D4D;
+}
+
+
+/* ==== Default (أكبر من 1440px) ==== */
+.hero-movies{
+  background:
+    linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0)),
+    url("../movies-page-img/hero-img-movies.webp");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* ==== Laptop: 841px إلى 1440px ==== */
+@media screen and (min-width: 841px) and (max-width: 1440px) {
+  .hero-movies{
+    background:
+      linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0)),
+      url("../movies-page-img/laptop-back-ground.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+/* ==== Mobile: 840px وأقل ==== */
+@media screen and (max-width: 840px){
+  .hero-movies{
+   
+
+    background:
+      linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0)),
+      url("../movies-page-img/mobile-back-ground.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .hero-movies p{
+display: none;
+  }
+}
+
+
+.hero-movies{
+        display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+}
+.hero-movies .hidder-description{
+    max-width: 800px;
+}
+.btn-hero{
+
+background-color: var(--back-ground);
+padding: 14px;
+border-radius: 8px;
+
+}
+.btn-play-hero{
+    background-color: red;
+    padding: 14px 24px;
+    color: white;
+    transition: all 0.5s;
+}
+.hero-movies h1{
+    color: var(--Text-Hover-color);
+
+}
+.hero-movies p{
+    color: var(--Text-Color);
+}
+
+
+.btn-play-hero:hover{
+background-color: darkred;
+color: white;
+transform: scale(1.2);
+}
+.btn-play-hero:hover .rect-movies{
+    transform: scale(1);
+}
+
+
+/*end hero*/
+
+.sec-1-categores{
+border-radius: 8px;
+border: 1px var(--border-color) solid;
+position: relative;
+}
+.Movies-mark{
+padding: 10px 24px;
+top:-20px;
+left: 34px;
+border-radius: 8px;
+background-color: red;
+color: white;
+}
+.categores-top{
+    padding-left: 34px;
+}
+.sec-1-categores .card .top-10-in{
+    background-color: red;
+    bottom: 0;
+    padding: 5px 10px;
+    font-size: 9px;
+    left: 0;
+    border-radius: 5px;
+    color: white;
+}
+.cards .card .eye{
+        width: 19.5px;
+    height: 19.5px;
+    margin: inherit;
+}
+.time-watch{
+    font-size: 13px;
+    color: var(--Text-Color);
+}
+
+
+
+.clock-time {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: black;
+    padding: 3px;
+    border-radius: 8pc;
+    border: 1px var(--border-color) solid;
+}
+
+.cards .card .clock{
+    width: 19.5px;
+    height: 19.5px;
+     margin: inherit;
+}
+.views{
+        padding: 2px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+   border: 1px var(--border-color) solid;
+    border-radius: 20px;
+}
+.num-views{
+    color: var(--Text-Color);
+    font-size: 13px;
+}
+/*released-date*/
+.released-date{
+        font-size: 14px;
+    padding: 6px;
+    background-color: black;
+    border-radius: 8px;
+    color: var(--Text-Color);
+    border: 1px var(--border-color) solid;
+}

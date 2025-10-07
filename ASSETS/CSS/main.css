@@ -983,4 +983,13 @@ border-top: 3px var(--Text-Color) solid ;
 /*modal*/
 .modal-body a{
 text-decoration: none;
+color: var(--Text-Color);
+transition: all 0.5s;
+}
+.modal-body a:hover{
+color: black;
+
+}
+.modal-body button{
+  transition:  all 0.5s;
 }

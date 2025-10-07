@@ -23,6 +23,20 @@ tbody, td, tfoot, th, thead, tr{
     
 }
 
+
+
+@media screen and ( min-width : 768.1px) {
+    .desctop-table{
+        display: block;
+    }
+    .Mobile-table{
+        display: none;
+        
+    }
+
+}
+
+
 @media screen and ( max-width : 768px) {
     .desctop-table{
         display: none;

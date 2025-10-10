@@ -87,8 +87,12 @@ display: block;
 .Send{
     width: 100%;
 }
-
-
+.support-section .right-left-section{
+    gap :50px;
+}
+.support-section .right{
+    gap :10px;
+}
 
 }
 
